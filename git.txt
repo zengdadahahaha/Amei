@@ -1,0 +1,50 @@
+tarena@tedu:~$ mkdir AID1807
+tarena@tedu:~$ cd AID1807/
+tarena@tedu:~/AID1807$ sudo git config --system user.name Tedu
+[sudo] tarena 的密码： 
+tarena@tedu:~/AID1807$ cat /etc/gitconfig
+[user]
+	name = Tedu
+tarena@tedu:~/AID1807$ sudo git config --global user.emall 1134408480@qq.com
+tarena@tedu:~/AID1807$ cat ~/.gitconfig
+[user]
+	emall = 1134408480@qq.com
+tarena@tedu:~/AID1807$ mkdir project
+tarena@tedu:~/AID1807$ ls
+project
+tarena@tedu:~/AID1807$ cd project/
+tarena@tedu:~/AID1807/project$ git init
+初始化空的 Git 仓库于 /home/tarena/AID1807/project/.git/
+tarena@tedu:~/AID1807/project$ ll
+总用量 12
+drwxrwxr-x 3 tarena tarena 4096 9月  26 15:00 ./
+drwxrwxr-x 3 tarena tarena 4096 9月  26 14:59 ../
+drwxrwxr-x 7 tarena tarena 4096 9月  26 15:00 .git/
+tarena@tedu:~/AID1807/project$ cd .git
+tarena@tedu:~/AID1807/project/.git$ ls
+branches  config  description  HEAD  hooks  info  objects  refs
+tarena@tedu:~/AID1807/project/.git$ cat config 
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+tarena@tedu:~/AID1807/project/.git$ cd ..
+tarena@tedu:~/AID1807/project$ ls
+tarena@tedu:~/AID1807/project$ git config core.editor sublime
+tarena@tedu:~/AID1807/project$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	editor = sublime
+tarena@tedu:~/AID1807/project$ git config --list
+user.name=Tedu
+user.emall=1134408480@qq.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.editor=sublime
+
