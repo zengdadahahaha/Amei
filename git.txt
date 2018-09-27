@@ -50,5 +50,9 @@ core.editor=sublime
 44444444444444444444444444
 555555555555555555555555555
 ggggggggggggggggggggggggg
+<<<<<<< HEAD
 iiiiiiiiiiiiiiiiiiiiiiii
+=======
+jame --> jame1
+>>>>>>> dev_jame
 
